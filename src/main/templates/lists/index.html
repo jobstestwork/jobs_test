@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+
+{% load tag %}
+
+{% block page_content %}
+    <div id="main-content">
+        <table cellspacing="5" cellpadding="5">
+            <tr>
+                <th>Name</th>
+                <th>Count Students</th>
+                <th>Main Student</th>
+                <th>To admin panel</th>
+                <th>Manage</th>
+            </tr>
+            {% for group in group_list %}
+                <tr>
+                    <td><a href="/group/{{ group.id }}">{{ group.name }}</a></td>
+                    <td>{{ group.student_set.all|length }}</td>
+                    <td>{{ group.main_student.fname }} {{ group.main_student.sname }} {{ group.main_student.lname }}</td>
+                    <td>{% edit_list group 'admin panel' %}</td>
+                    <td><a href="/group/manage/{{ group.id }}">Manage</a></td>
+                </tr>
+            {% endfor %}
+        </table>
+    </div>
+{% endblock %}

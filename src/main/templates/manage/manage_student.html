@@ -1,0 +1,113 @@
+{% extends "base.html" %}
+
+{% block page_content %}
+
+    <div id="main-content">
+        {% if student_detail %}{{ student_detail }}
+            <form method="post" action="">{% csrf_token %}
+                <div>
+                    <div class="left-part">
+                        <label for="id_fname">Fname:</label>
+                    </div>
+                    <div class="right-part">
+                        <input id="id_fname" type="text" name="fname" maxlength="255" value="{{ student_detail.fname }}">
+                    </div>
+                </div>
+                <div>
+                    <div class="left-part">
+                        <label for="id_sname">Sname:</label>
+                    </div>
+                    <div class="right-part">
+                        <input id="id_sname" type="text" name="sname" maxlength="255" value="{{ student_detail.sname }}">
+                    </div>
+                </div>
+                <div>
+                    <div class="left-part">
+                        <label for="id_lname">Lname:</label>
+                    </div>
+                    <div class="right-part">
+                        <input id="id_lname" type="text" name="lname" maxlength="255" value="{{ student_detail.lname }}">
+                    </div>
+                </div>
+                <div>
+                    <div class="left-part">
+                        <label for="id_ticket">Ticket:</label>
+                    </div>
+                    <div class="right-part">
+                        <input id="id_ticket" type="text" name="ticket" maxlength="255" value="{{ student_detail.ticket }}">
+                    </div>
+                </div>
+                <div>
+                    <div class="left-part">
+                        <label for="id_group">Group:</label>
+                    </div>
+                    <div class="right-part">
+                        <select name="group" id="id_group">
+                            <option value="">---------</option>
+                            {% for group in groups %}
+                                <option value="{{ group.id }}"{% if group.id == student_detail.group.id %} selected="selected"{% endif %}>{{ group.name }}</option>
+                            {% endfor %}
+                        </select>
+                    </div>
+                </div>
+                <div id="submit-reg-form">
+                    <input type="submit" value="edit" class="btn"/>
+                </div>
+            </form>
+        {% else %}
+        <form method="post" action="">{% csrf_token %}
+            <div>
+                <div class="left-part">
+                    <label for="id_fname">Fname:</label>
+                </div>
+                <div class="right-part">
+                    {{ form.fname }}
+                </div>
+            </div>
+            <div>
+                <div class="left-part">
+                    <label for="id_sname">Sname:</label>
+                </div>
+                <div class="right-part">
+                    {{ form.sname }}
+                </div>
+            </div>
+            <div>
+                <div class="left-part">
+                    <label for="id_lname">Lname:</label>
+                </div>
+                <div class="right-part">
+                    {{ form.lname }}
+                </div>
+            </div>
+            <div>
+                <div class="left-part">
+                    <label for="id_ticket">Ticket:</label>
+                </div>
+                <div class="right-part">
+                    {{ form.ticket }}
+                </div>
+            </div>
+            <div>
+                <div class="left-part">
+                    <label for="id_birthdate">Birthdate:</label>
+                </div>
+                <div class="right-part">
+                    {{ form.birthdate }}
+                </div>
+            </div>
+            <div>
+                <div class="left-part">
+                    <label for="id_group">Group:</label>
+                </div>
+                <div class="right-part">
+                    {{ form.group }}
+                </div>
+            </div>
+            <div id="submit-reg-form">
+                <input type="submit" value="add" class="btn"/>
+            </div>
+        </form>
+        {% endif %}
+    </div>
+{% endblock %}

@@ -1,0 +1,182 @@
+[
+    {
+        "model":"main.group",
+        "pk":1,
+        "fields": {
+            "name":"Group1",
+            "main_student":1
+        }
+    },
+    {
+        "model":"main.group",
+        "pk":2,
+        "fields": {
+            "name":"Group2",
+            "main_student":4
+        }
+    },
+    {
+        "model":"main.group",
+        "pk":3,
+        "fields": {
+            "name":"Group3",
+            "main_student":7
+        }
+    },
+    {
+        "model":"main.student",
+        "pk":1,
+        "fields": {
+            "fname":"John",
+            "sname":"Lennon",
+            "lname":"Abi1",
+            "birthdate":"1989-04-13",
+            "ticket":100,
+            "group":1
+        }
+    },
+    {
+        "model":"main.student",
+        "pk":2,
+        "fields": {
+            "fname":"John",
+            "sname":"Lennon",
+            "lname":"Abi2",
+            "birthdate":"1989-04-14",
+            "ticket":101,
+            "group":1
+        }
+    },
+    {
+        "model":"main.student",
+        "pk":3,
+        "fields": {
+            "fname":"John",
+            "sname":"Lennon",
+            "lname":"Abi3",
+            "birthdate":"1989-04-15",
+            "ticket":102,
+            "group":1
+        }
+    },
+    {
+        "model":"main.student",
+        "pk":4,
+        "fields": {
+            "fname":"John",
+            "sname":"Lennon",
+            "lname":"Abi4",
+            "birthdate":"1989-04-16",
+            "ticket":103,
+            "group":2
+        }
+    },
+    {
+        "model":"main.student",
+        "pk":5,
+        "fields": {
+            "fname":"John",
+            "sname":"Lennon",
+            "lname":"Abi5",
+            "birthdate":"1989-04-17",
+            "ticket":104,
+            "group":2
+        }
+    },
+    {
+        "model":"main.student",
+        "pk":6,
+        "fields": {
+            "fname":"John",
+            "sname":"Lennon",
+            "lname":"Abi6",
+            "birthdate":"1989-04-18",
+            "ticket":105,
+            "group":2
+        }
+    },
+    {
+        "model":"main.student",
+        "pk":7,
+        "fields": {
+            "fname":"John",
+            "sname":"Lennon",
+            "lname":"Abi7",
+            "birthdate":"1989-04-19",
+            "ticket":106,
+            "group":3
+        }
+    },
+    {
+        "model":"main.student",
+        "pk":8,
+        "fields": {
+            "fname":"John",
+            "sname":"Lennon",
+            "lname":"Abi8",
+            "birthdate":"1989-04-20",
+            "ticket":107,
+            "group":3
+        }
+    },
+    {
+        "model":"main.student",
+        "pk":9,
+        "fields": {
+            "fname":"John",
+            "sname":"Lennon",
+            "lname":"Abi9",
+            "birthdate":"1989-04-21",
+            "ticket":108,
+            "group":3
+        }
+    },
+    {
+        "model":"main.student",
+        "pk":10,
+        "fields": {
+            "fname":"John",
+            "sname":"Lennon",
+            "lname":"Abi10",
+            "birthdate":"1989-04-22",
+            "ticket":109,
+            "group":3
+        }
+    },
+    {
+        "model":"main.student",
+        "pk":11,
+        "fields": {
+            "fname":"John",
+            "sname":"Lennon",
+            "lname":"Abi11",
+            "birthdate":"1989-04-23",
+            "ticket":110,
+            "group":3
+        }
+    },
+    {
+        "model":"main.student",
+        "pk":12,
+        "fields": {
+            "fname":"John",
+            "sname":"Lennon",
+            "lname":"Abi12",
+            "birthdate":"1989-04-24",
+            "ticket":111,
+            "group":3
+        }
+    },
+    {
+        "model":"main.student",
+        "pk":13,
+        "fields": {
+            "fname":"John",
+            "sname":"Lennon",
+            "lname":"Abi13",
+            "birthdate":"1989-04-25",
+            "ticket":112,
+            "group":3
+        }
+    }
+]

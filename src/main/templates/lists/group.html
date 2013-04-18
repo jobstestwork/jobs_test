@@ -1,0 +1,47 @@
+{% extends "base.html" %}
+{% load thumbnail %}
+
+{% block page_content %}
+    <div>Students of group #{{ group.id }} - {{ group.name }}</div>
+    <div id="main-content">
+        <div>
+            <table cellspacing="0" cellpadding="0">
+                <tr>
+                    <th>Image</th>
+                    <th>FName</th>
+                    <th>SName</th>
+                    <th>LName</th>
+                    <th>Birthdate</th>
+                    <th>Ticket</th>
+                </tr>
+                {% for student in students %}
+                    <tr>
+                        <td>
+                            {% thumbnail student.image "50x50" crop="center" as im %}
+                                <img src="{{ MEDIA_URL }}{{ im.url }}" width="{{ im.width }}" height="{{ im.height }}">
+                            {% endthumbnail %}
+                        </td>
+                        <td><a href="/student/manage/{{ student.id }}">{{ student.fname }}</a></td>
+                        <td><a href="/student/manage/{{ student.id }}">{{ student.sname }}</a></td>
+                        <td><a href="/student/manage/{{ student.id }}">{{ student.lname }}</a></td>
+                        <td><a href="/student/manage/{{ student.id }}">{{ student.birthdate }}</a></td>
+                        <td><a href="/student/manage/{{ student.id }}">{{ student.ticket }}</a></td>
+                    </tr>
+                {% endfor %}
+                <tr>
+                    <td colspan="6">
+                        {% if page_obj.has_previous %}
+                            <a href="/group/{{ group.id }}/?page={{ page_obj.previous_page_number }}">previous</a>
+                        {% endif %}
+                        <span class="page-current">
+                        Page {{ page_obj.number }} of {{ page_obj.paginator.num_pages }}
+                    </span>
+                        {% if page_obj.has_next %}
+                            <a href="/group/{{ group.id }}/?page={{ page_obj.next_page_number }}">next</a>
+                        {% endif %}
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+{% endblock %}

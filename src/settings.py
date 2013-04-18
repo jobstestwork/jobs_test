@@ -124,9 +124,9 @@ INSTALLED_APPS = (
     'sorl.thumbnail',
 )
 
-TEMPLATE_CONTEXT_PROCESSORS = DEFAULT_SETTINGS.TEMPLATE_CONTEXT_PROCESSORS + (
-    "main.context_processor.processor",
-)
+#TEMPLATE_CONTEXT_PROCESSORS = DEFAULT_SETTINGS.TEMPLATE_CONTEXT_PROCESSORS + (
+#    "main.context_processor.processor",
+#)
 
 #AUTHENTICATION_BACKENDS = (
 #    'backend.BasicBackend',

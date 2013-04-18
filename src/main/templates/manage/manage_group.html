@@ -1,0 +1,70 @@
+{% extends "base.html" %}
+
+{% block page_content %}
+    <div id="main-content">
+        {% if group_detail %}
+            <form method="post" action="">{% csrf_token %}
+                <div>
+                    <div class="left-part">
+                        <label for="id_name">Name:</label>
+                    </div>
+                    <div class="right-part">
+                        <input id="id_name" type="text" name="name" maxlength="255" value="{{ group_detail.name }}">
+                    </div>
+                </div>
+                <div>
+                    <div class="left-part">
+                        <label for="id_main_student">Main Student:</label>
+                    </div>
+                    <div class="right-part">
+                        <select name="main_student" id="id_main_student">
+                            <option value="">---------</option>
+                            {% for student in students %}
+                                <option value="{{ student.id }}" {% if student.group.id == group_detail.id %} selected="selected" {% endif %}>{{ student.get_name }}</option>
+                            {% endfor %}
+{#                            <option value="1">John Lennon Abi1</option>#}
+{#                            <option value="2">John Lennon Abi2</option>#}
+{#                            <option value="3">John Lennon Abi3</option>#}
+{#                            <option value="4">John Lennon Abi4</option>#}
+{#                            <option value="5">John Lennon Abi5</option>#}
+{#                            <option value="6">John Lennon Abi6</option>#}
+{#                            <option value="7">John Lennon Abi7</option>#}
+{#                            <option value="8">John Lennon Abi8</option>#}
+{#                            <option value="9">John Lennon Abi9</option>#}
+{#                            <option value="10">John Lennon Abi10</option>#}
+{#                            <option value="11">John Lennon Abi11</option>#}
+{#                            <option value="12">John Lennon Abi12</option>#}
+{#                            <option value="13">John Lennon Abi13</option>#}
+{#                            <option value="14">asdf asds asdl</option>#}
+                        </select>
+                    </div>
+                </div>
+                <div id="submit-reg-form">
+                    <input type="submit" value="add" class="btn"/>
+                </div>
+            </form>
+        {% else %}
+            <form method="post" action="">{% csrf_token %}
+                <div>
+                    <div class="left-part">
+                        <label for="id_name">Name:</label>
+                    </div>
+                    <div class="right-part">
+                        {{ form.name }}
+                    </div>
+                </div>
+                <div>
+                    <div class="left-part">
+                        <label for="id_main_student">Main Student:</label>
+                    </div>
+                    <div class="right-part">
+                        {{ form.main_student }}
+                    </div>
+                </div>
+                <div id="submit-reg-form">
+                    <input type="submit" value="add" class="btn"/>
+                </div>
+            </form>
+        {% endif %}
+    </div>
+{% endblock %}
