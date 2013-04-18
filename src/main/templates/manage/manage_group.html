@@ -22,20 +22,6 @@
                             {% for student in students %}
                                 <option value="{{ student.id }}" {% if student.group.id == group_detail.id %} selected="selected" {% endif %}>{{ student.get_name }}</option>
                             {% endfor %}
-{#                            <option value="1">John Lennon Abi1</option>#}
-{#                            <option value="2">John Lennon Abi2</option>#}
-{#                            <option value="3">John Lennon Abi3</option>#}
-{#                            <option value="4">John Lennon Abi4</option>#}
-{#                            <option value="5">John Lennon Abi5</option>#}
-{#                            <option value="6">John Lennon Abi6</option>#}
-{#                            <option value="7">John Lennon Abi7</option>#}
-{#                            <option value="8">John Lennon Abi8</option>#}
-{#                            <option value="9">John Lennon Abi9</option>#}
-{#                            <option value="10">John Lennon Abi10</option>#}
-{#                            <option value="11">John Lennon Abi11</option>#}
-{#                            <option value="12">John Lennon Abi12</option>#}
-{#                            <option value="13">John Lennon Abi13</option>#}
-{#                            <option value="14">asdf asds asdl</option>#}
                         </select>
                     </div>
                 </div>

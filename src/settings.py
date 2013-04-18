@@ -100,7 +100,7 @@ MIDDLEWARE_CLASSES = (
     'django.middleware.csrf.CsrfViewMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
-#    'main.stat.SQLLogMiddleware'
+    'main.stat.SQLLogMiddleware'
 )
 
 ROOT_URLCONF = 'urls'
@@ -124,14 +124,14 @@ INSTALLED_APPS = (
     'sorl.thumbnail',
 )
 
-#TEMPLATE_CONTEXT_PROCESSORS = DEFAULT_SETTINGS.TEMPLATE_CONTEXT_PROCESSORS + (
-#    "main.context_processor.processor",
-#)
+TEMPLATE_CONTEXT_PROCESSORS = DEFAULT_SETTINGS.TEMPLATE_CONTEXT_PROCESSORS + (
+    "main.context_processor.processor",
+)
 
-#AUTHENTICATION_BACKENDS = (
-#    'backend.BasicBackend',
+AUTHENTICATION_BACKENDS = (
+    'backend.BasicBackend',
 #    'backend.EmailBackend',
-#)
+)
 
 # A sample logging configuration. The only tangible logging
 # performed by this configuration is to send an email to

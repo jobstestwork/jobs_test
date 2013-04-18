@@ -2,10 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="bc918885-269a-4497-9d03-279aa7f1ebce" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/views.py" afterPath="$PROJECT_DIR$/src/main/views.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/database/test.db" afterPath="$PROJECT_DIR$/database/test.db" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/models.py" afterPath="$PROJECT_DIR$/src/main/models.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/templates/manage/manage_group.html" afterPath="$PROJECT_DIR$/src/main/templates/manage/manage_group.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/templates/manage/manage_student.html" afterPath="$PROJECT_DIR$/src/main/templates/manage/manage_student.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/settings.py" afterPath="$PROJECT_DIR$/src/settings.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/urls.py" afterPath="$PROJECT_DIR$/src/urls.py" />
     </list>
     <ignored path="jobs_test_work.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -28,16 +30,16 @@
       <file leaf-file-name="settings.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/settings.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="129" column="0" selection-start="4675" selection-end="4675" vertical-scroll-proportion="0.0">
+            <state line="134" column="0" selection-start="4759" selection-end="4759" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="admin.py" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="admin.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/admin.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="22" column="0" selection-start="674" selection-end="674" vertical-scroll-proportion="0.3544576">
+            <state line="22" column="0" selection-start="674" selection-end="674" vertical-scroll-proportion="0.0">
               <folding>
                 <element signature="e#0#32#0" expanded="true" />
               </folding>
@@ -79,7 +81,27 @@
       <file leaf-file-name="models.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/models.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="1" column="0" selection-start="29" selection-end="29" vertical-scroll-proportion="0.0">
+            <state line="79" column="21" selection-start="2024" selection-end="2024" vertical-scroll-proportion="0.0">
+              <folding>
+                <element signature="e#0#28#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="manage_student.html" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/templates/manage/manage_student.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="5" column="31" selection-start="112" selection-end="112" vertical-scroll-proportion="0.08269019">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="manage_group.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/templates/manage/manage_group.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="24" column="0" selection-start="1157" selection-end="1157" vertical-scroll-proportion="-15.0">
               <folding />
             </state>
           </provider>
@@ -109,11 +131,13 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/src/main/models.py" />
-        <option value="$PROJECT_DIR$/src/settings.py" />
         <option value="$PROJECT_DIR$/src/main/views.py" />
         <option value="$PROJECT_DIR$/src/urls.py" />
         <option value="$PROJECT_DIR$/src/main/templates/lists/index.html" />
+        <option value="$PROJECT_DIR$/src/settings.py" />
+        <option value="$PROJECT_DIR$/src/main/models.py" />
+        <option value="$PROJECT_DIR$/src/main/templates/manage/manage_student.html" />
+        <option value="$PROJECT_DIR$/src/main/templates/manage/manage_group.html" />
       </list>
     </option>
   </component>
@@ -267,6 +291,32 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="tags" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="jobs_test_work" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="jobs_test_work" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="templates" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="manage" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -475,13 +525,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="0" selection-start="29" selection-end="29" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/urls.py">
       <provider selected="true" editor-type-id="text-editor">
         <state line="17" column="19" selection-start="1021" selection-end="1021" vertical-scroll-proportion="0.0">
@@ -523,19 +566,42 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/admin.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="22" column="0" selection-start="674" selection-end="674" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="e#0#32#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/settings.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="129" column="0" selection-start="4675" selection-end="4675" vertical-scroll-proportion="0.0">
+        <state line="134" column="0" selection-start="4759" selection-end="4759" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/admin.py">
+    <entry file="file://$PROJECT_DIR$/src/main/models.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="22" column="0" selection-start="674" selection-end="674" vertical-scroll-proportion="0.3544576">
+        <state line="79" column="21" selection-start="2024" selection-end="2024" vertical-scroll-proportion="0.0">
           <folding>
-            <element signature="e#0#32#0" expanded="true" />
+            <element signature="e#0#28#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/templates/manage/manage_group.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="24" column="0" selection-start="1157" selection-end="1157" vertical-scroll-proportion="-15.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/templates/manage/manage_student.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="5" column="31" selection-start="112" selection-end="112" vertical-scroll-proportion="0.08269019">
+          <folding />
         </state>
       </provider>
     </entry>

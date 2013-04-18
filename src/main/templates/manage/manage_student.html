@@ -3,7 +3,7 @@
 {% block page_content %}
 
     <div id="main-content">
-        {% if student_detail %}{{ student_detail }}
+        {% if student_detail %}
             <form method="post" action="">{% csrf_token %}
                 <div>
                     <div class="left-part">
